@@ -1,21 +1,22 @@
-/* Basic reset for margin, padding, and box sizing */
+/* Reset and Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Set a comfortable base font and background color */
+  /* Body Styling */
   body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background: linear-gradient(135deg, #81d4fa, #e1f5fe);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
   }
   
-  /* Container for the weather widget */
+  /* Weather App Container */
   .container {
     background-color: #ffffff;
     border-radius: 10px;
@@ -26,20 +27,20 @@
     text-align: center;
   }
   
-  /* Styling for the input field */
+  /* Input Field */
   #input {
     width: 70%;
     padding: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border: 2px solid #90caf9;
     border-radius: 5px;
     font-size: 16px;
     outline: none;
   }
   
-  /* Styling for the search button */
-  #search-button {
-    width: 25%;
+  /* Search and Location Buttons */
+  #search-button, #current-location {
+    width: 45%;
     padding: 12px;
     background-color: #42a5f5;
     border: none;
@@ -48,22 +49,32 @@
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-left: 5%;
+    margin-top: 10px;
+  }
+  #sample {
+margin-top: 10px;
   }
   
-  #search-button:hover {
+  #search-button:hover, #current-location:hover {
     background-color: #1e88e5;
   }
   
-  /* Headings styling for weather data */
-  #city-name,
-  #city-temp,
-  #city-time {
+  /* Location Section */
+  #location {
     margin: 15px 0;
+    font-weight: bold;
     color: #424242;
   }
   
-  /* Additional styling for the weather condition text and icon */
+  /* Weather Data Headings */
+  #city-name, #city-temp, #city-time {
+    margin: 15px 0;
+    color: #424242;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Weather Condition */
   .condition {
     display: flex;
     justify-content: center;
@@ -80,5 +91,14 @@
   .condition h3 {
     font-size: 20px;
     color: #0277bd;
+  }
+  
+  /* Footer */
+  .footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
   }
   
