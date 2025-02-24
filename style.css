@@ -1,0 +1,84 @@
+/* Basic reset for margin, padding, and box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set a comfortable base font and background color */
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #81d4fa, #e1f5fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Container for the weather widget */
+  .container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    text-align: center;
+  }
+  
+  /* Styling for the input field */
+  #input {
+    width: 70%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #90caf9;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  /* Styling for the search button */
+  #search-button {
+    width: 25%;
+    padding: 12px;
+    background-color: #42a5f5;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 5%;
+  }
+  
+  #search-button:hover {
+    background-color: #1e88e5;
+  }
+  
+  /* Headings styling for weather data */
+  #city-name,
+  #city-temp,
+  #city-time {
+    margin: 15px 0;
+    color: #424242;
+  }
+  
+  /* Additional styling for the weather condition text and icon */
+  .condition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .condition img {
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
+  }
+  
+  .condition h3 {
+    font-size: 20px;
+    color: #0277bd;
+  }
+  
